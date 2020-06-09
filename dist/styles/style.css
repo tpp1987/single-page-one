@@ -255,12 +255,40 @@ header {
 
 .people-card {
     text-transform: uppercase;
+    position: relative;
 }
 
 .people-card h3 {
     font-size: var(--l1-font-size);
     font-weight: 400;
     margin: 1rem 0 var(--xs-font-size);
+}
+
+.people-card-hover {
+    width: 333px;
+    height:500px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(42, 51, 142, 0.8);
+    color: var(--main-bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+#about-container .people-card-hover p {
+    height: max-content;
+    margin: 0;
+}
+
+.people-card:hover .people-card-hover{
+    opacity: 1;
 }
 
 /* SERVICES =========================================*/
@@ -305,6 +333,13 @@ header {
     font-size: var(--l5-font-size);
     margin-bottom: var(--l3-font-size);
     color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.services-icons-card i:hover {
+    transform: scale(1.2) rotateZ(5deg);
+    color: var(--tertiary-color);
+    transition: all 0.7s;
 }
 
 .services-icons-card p {
@@ -341,6 +376,11 @@ header {
 
 /* CONTACT =========================================*/
 
+#contact a {
+    color: var(--main-txt-color);
+    text-decoration: none;
+}
+
 #contact-details {
     background-color: var(--light-grey-color);
     display: grid;
@@ -364,6 +404,12 @@ header {
 #location-social-icons i {
     font-size: var(--l1-font-size);
     margin-right: 1rem;
+    transition: all 0.3s;
+}
+
+#location-social-icons i:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
 }
 
 #contact-form {
@@ -462,6 +508,10 @@ footer a {
     margin-bottom: var(--l2-font-size);
 }
 
+#footer-links a:hover {
+    text-decoration: underline;
+}
+
 #footer-quote p {
     margin-bottom: var(--l2-font-size);
 }
@@ -490,9 +540,22 @@ footer a {
     margin-top: var(--l2-font-size);
 }
 
-#footer-social-icons i {
+#footer-social-icons li {
     font-size: var(--l1-font-size);
     margin-right: 1rem;
+}
+
+#footer-social-icons li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+#footer-social-icons i {
+    transition: all 0.3s;
+}
+
+#footer-social-icons i:hover {
+    transform: scale(1.1);
+    color: var(--secondary-color);
 }
 
 /* COPYRIGHT ========================================*/
@@ -512,9 +575,32 @@ footer a {
     margin-bottom: var(--xs-font-size);
 }
 
-/* SECTION NAME =====================================*/
+/* BACK TO TOP LINK ================================*/
 
+#back-to-top {
+    font-size: var(--l3-font-size);
+    width: min-content;
+    padding: 0 var(--xs-font-size);
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    box-shadow: 5px 5px 10px -5px var(--dark-grey-color);
+    border-radius: var(--xs-font-size);
+    position: fixed;
+    bottom: var(--l1-font-size);
+    right: var(--l1-font-size);
+    transition: all 0.4s;
+}
 
+#back-to-top:hover i {
+    transform: scale(1.2);
+    transition: transform 0.7s;
+}
+
+#back-to-top:hover {
+    background-color: var(--primary-color);
+    color: var(--main-bg-color);
+    transition: all 0.6s;
+}
 
 /*==================================================*/
 /* MEDIA QUERIES - TABLET LANDSCAPE 1024px =========*/

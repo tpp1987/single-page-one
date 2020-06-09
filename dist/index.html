@@ -15,22 +15,24 @@
 
     <body>
         
-        <header>
+        <header id="top">
             <div id="main-nav-container">
                 <nav id="main-nav">
-                    <div id="company-logo">
-                        <i class="fas fa-box-open" style="font-size: var(--l2-font-size); padding-right: var(--xs-font-size);"></i>
-                        <h1>Company Name</h1>
-                    </div>
+                    <a href="#top">
+                        <div id="company-logo">
+                            <i class="fas fa-box-open" style="font-size: var(--l2-font-size); padding-right: var(--xs-font-size);"></i>
+                            <h1>Company Name</h1>
+                        </div>
+                    </a>
                     <ul>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                         <li>
                             <p><span style="font-weight: 700; color:var(--primary-color);">Tel:</span> 01234 567890</p>
@@ -56,17 +58,26 @@
                         <div class="people-card">
                             <img src="images/man1.jpg" alt="Person one">
                             <h3>Person Name</h3>
-                            <p>Title</p>
+                            <p>Job Title</p>
+                            <div class="people-card-hover">
+                                <p>Here is some information about this person.</p>
+                            </div>
                         </div>
                         <div class="people-card">
                             <img src="images/woman1.jpg" alt="Person one">
                             <h3>Person Name</h3>
-                            <p>Title</p>
+                            <p>Job Title</p>
+                            <div class="people-card-hover">
+                                <p>Here is some information about this person.</p>
+                            </div>
                         </div>
                         <div class="people-card">
                             <img src="images/woman2.jpg" alt="Person one">
                             <h3>Person Name</h3>
-                            <p>Title</p>
+                            <p>Job Title</p>
+                            <div class="people-card-hover">
+                                <p>Here is some information about this person.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,13 +155,13 @@
                         <br>
                         <ul id="location-social-icons">
                             <li>
-                                <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <i class="fab fa-twitter"></i>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                             </li>
                             <li>
-                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -176,16 +187,16 @@
                         <h2>Links</h2>
                         <ul>
                             <li>
-                                <a href="">Top</a>
+                                <a href="#top">Top</a>
                             </li>
                             <li>
-                                <a href="">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="">Services</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -203,13 +214,13 @@
                         <p>WC2N 5DN</p>
                         <ul id="footer-social-icons">
                             <li>
-                                <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <i class="fab fa-twitter"></i>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                             </li>
                             <li>
-                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -217,9 +228,13 @@
             </section>
             <section id="copyright">
                 <p>&copy; 2020 Company Name</p>
-                <p>Website by <a href="">Parkes Digital</a></p>
+                <p>Website by <a href="https://twitter.com/tomparkes1987" target="_blank">Tom Parkes</a></p>
             </section>
         </footer>
+
+        <a href="#top" id="back-to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
         <!-- JavaScript -->
         <script src="scripts/main.js"></script>
